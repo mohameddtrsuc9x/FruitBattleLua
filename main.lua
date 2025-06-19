@@ -29,7 +29,7 @@ Tab:AddToggle({
             for i, value in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
                 if value:IsA("Tool") then
                     game:GetService("ReplicatedStorage"):WaitForChild("Replicator"):InvokeServer(unpack({tostring(
-                        current_slot_name), tostring(value), {
+                        current_slot_name), tostring(value:gsub(" ","")), {
                         MouseRay = {
                             Normal = Vector3.yAxis,
                             Direction = vector.create(-233.08799743652344, -114.48482513427734, 12.775901794433594),
