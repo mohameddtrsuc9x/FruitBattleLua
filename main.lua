@@ -30,15 +30,15 @@ Tab:AddToggle({
                 if value:IsA("Tool") then
                     game:GetService("ReplicatedStorage"):WaitForChild("Replicator"):InvokeServer(unpack({tostring(
                         current_slot_name), tostring(value):gsub(" ",""), {
-                        MouseRay = {
-                            Normal = Vector3.yAxis,
-                            Direction = vector.create(-233.08799743652344, -114.48482513427734, 12.775901794433594),
-                            Origin = vector.create(608.1336669921875, 771.7188110351562, 362.4999084472656),
-                            Instance = workspace:WaitForChild("Map"):WaitForChild("Model"):WaitForChild("Part"),
-                            Distance = 94.16972351074219,
-                            Material = Enum.Material.Foil,
-                            Position = vector.create(523.7112426757812, 730.25341796875, 367.1272277832031)
-                        }
+						MouseRay = {
+							Normal = Vector3.yAxis,
+							Direction = vector.create(72.11835479736328, -106.53192901611328, 153.13357543945312),
+							Origin = vector.create(-1021.4510498046875, 701.053955078125, -928.883056640625),
+							Instance = workspace:WaitForChild("Map"):WaitForChild("Part"),
+							Distance = 13.369856834411621,
+							Material = Enum.Material.Grass,
+							Position = vector.create(-1016.6300048828125, 693.932373046875, -918.6461791992188)
+						}
                     }}))
                 end
             end
