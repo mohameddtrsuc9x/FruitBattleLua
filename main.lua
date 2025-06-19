@@ -28,6 +28,7 @@ Tab:AddToggle({
             wait(0.5)
             for i, value in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
                 if value:IsA("Tool") then
+					print(string.gsub(value, " ",""))
                     game:GetService("ReplicatedStorage"):WaitForChild("Replicator"):InvokeServer(unpack({tostring(
                         current_slot_name), tostring(string.gsub(value, " ","")), {
                         MouseRay = {
