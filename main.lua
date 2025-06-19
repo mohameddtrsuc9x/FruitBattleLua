@@ -30,7 +30,7 @@ Tab:AddToggle({
                 if value:IsA("Tool") then
 					print(string.gsub(value, " ",""))
                     game:GetService("ReplicatedStorage"):WaitForChild("Replicator"):InvokeServer(unpack({tostring(
-                        current_slot_name), tostring(string.gsub(value, " ","")), {
+                        current_slot_name), string.gsub(tostring(value), " ",""), {
                         MouseRay = {
                             Normal = Vector3.yAxis,
                             Direction = vector.create(-233.08799743652344, -114.48482513427734, 12.775901794433594),
